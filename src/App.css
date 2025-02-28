@@ -35,7 +35,7 @@
 }
 
 .header-contactButton{
-    background: #ac6b3d;
+    background: var(--secondary-color);
     width: 12em;
     height: 2.8em;
     border-radius: .5em;
@@ -49,4 +49,50 @@
 }
 .header-contactButton:hover{
     transform: scale(1.05);
+}
+
+
+
+
+.section-noLimitless{
+    background: var(--secondary-color);
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-noLimitless-mainContent{
+    width: 50vw;
+    height: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+.section-noLimitless-mainContent img{
+    width: 30em;
+    height: 20em;
+}
+
+.section-noLimitless-textContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 50%;
+    height: 100%;
+}
+.section-noLimitless-textContainer *{
+    color: white;
+}
+.section-noLimitless-textContainer h1{
+    font-size: 48px;
+}
+.section-noLimitless-textContainer p{
+    font-size: 18px;
+    
+}
+.section-noLimitless-textContainer a{
+    margin-top: 3em;
 }
