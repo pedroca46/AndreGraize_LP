@@ -2,9 +2,11 @@ import './global.css'
 import './App.css';
 import Navbar from './components/navbar/Navbar';
 import Example from './images/example.png'
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 // images
 import ag1 from './images/ag.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function App() {
   return (
@@ -15,11 +17,17 @@ function App() {
           <div className='header-textContainer'>
             <h1>Overseas trading & Business <br/>
             Development.</h1>
-            <p>Há mais de 2 décadas nos mercados brasileiro e chinês. <br/>
+            <p>Há mais de 2 décadas nos mercados brasileiros e chineses. <br/>
             Conte com nossos serviços de ponta-a-ponta na cadeia <br/>
             de suprimentos global.</p>
             <a href="#" className='header-contactButton'>Contate-nos</a>
           </div>
+          <div className='header-learnMore'>
+            <FontAwesomeIcon icon={faArrowDown}  style={{color: "#ffffff",}} className='iconArrowDown' />
+            <h1 className='header-text'>Quais são nossos serviços?</h1>
+            <FontAwesomeIcon icon={faArrowDown}  style={{color: "#ffffff",}} className='iconArrowDown' /> {/* bounce */}
+          </div>
+
         </div>
 
         <div className='section-noLimitless'>
@@ -35,6 +43,7 @@ function App() {
             </div>
         </div>
       </div>
+      
     </>
   );
 }
