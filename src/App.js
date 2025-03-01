@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/navbar/Navbar';
 import Example from './images/example.png'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { faShip } from '@fortawesome/free-solid-svg-icons/faShip';
 
 import { faHandshake } from '@fortawesome/free-solid-svg-icons';
 
@@ -33,20 +34,14 @@ function App() {
 
         </div>
 
-        <div className='section-noLimitless'>
-            <div className='section-noLimitless-mainContent'>
-              <img src={ag1} alt='Foto'></img>
-              <div className='section-noLimitless-textContainer'>
-                <h1>Sem limites</h1>
-                <p>Rompa seus limites de compra e venda, acabe com as fronteiras que separam seus negócios de clientes e fornecedores mundiais.
-                Acompanhamos você e sua empresa nesse processo de evolução,
-                com toda clareza fundamentada na reputação construída ao longo dos anos.</p>
-                <a href="mailto:pedro.alves6491@gmail.com">Entre em contato pelo info@andregraize.com.br</a>
-              </div>
-            </div>
-        </div>
-
         <div className='section-ourServices'>
+
+          <h1>Nossos serviços</h1>
+          <div className='section-ourServices-hr'>
+            <hr></hr><FontAwesomeIcon icon={faShip} className='section-ourServices-hr-icon'/><hr></hr>
+          </div>
+
+
           <div className='section-ourServices-grid'>
             <CardServices title={(
               <>
@@ -72,6 +67,19 @@ function App() {
               </>
             )} icon_src={faHandshake}/>
           </div>
+        </div>
+        
+        <div className='section-noLimitless'>
+            <div className='section-noLimitless-mainContent'>
+              <img src={ag1} alt='Foto'></img>
+              <div className='section-noLimitless-textContainer'>
+                <h1>Sem limites</h1>
+                <p>Rompa seus limites de compra e venda, acabe com as fronteiras que separam seus negócios de clientes e fornecedores mundiais.
+                Acompanhamos você e sua empresa nesse processo de evolução,
+                com toda clareza fundamentada na reputação construída ao longo dos anos.</p>
+                <a href="mailto:pedro.alves6491@gmail.com">Entre em contato pelo info@andregraize.com.br</a>
+              </div>
+            </div>
         </div>
       </div>
       

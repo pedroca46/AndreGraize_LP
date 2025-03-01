@@ -1,6 +1,7 @@
 .cardServices-container{
     width: 530px;
     height: 290px;
+    margin: 3em;
     background-color: black;
 
     display: flex;

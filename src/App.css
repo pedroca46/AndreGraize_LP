@@ -144,18 +144,45 @@
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.section-ourServices h1{
+    color: var(--secondary-color);
+    font-size: 3em;
+}
+
+
+.section-ourServices-hr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.section-ourServices-hr hr{
+    border: 2px solid black;
+    border-radius: 1em;
+    width: 8em;
+}
+.section-ourServices-hr *{
+    color: black;
+}
+.section-ourServices-hr-icon{
+    font-size: 1.3em;
+    margin: 0 .4em;
+}
+
+
+
+
+
 .section-ourServices-grid{
-    height: auto;
+    height: calc(290*2);
     display: grid;
     grid-template-areas: 
         "a b"
         "c d";    
-
-    row-gap: 20%;
-    column-gap: 8%;
 }
 .section-ourServices-grid *{
     animation: appear 1.5s ease-in-out;
