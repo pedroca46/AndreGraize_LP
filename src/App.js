@@ -4,9 +4,12 @@ import Navbar from './components/navbar/Navbar';
 import Example from './images/example.png'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
+import { faHandshake } from '@fortawesome/free-solid-svg-icons';
+
 // images
 import ag1 from './images/ag.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import CardServices from './components/cardServices/CardServices';
 
 function App() {
   return (
@@ -41,6 +44,17 @@ function App() {
                 <a href="mailto:pedro.alves6491@gmail.com">Entre em contato pelo info@andregraize.com.br</a>
               </div>
             </div>
+        </div>
+
+        <div className='section-ourServices'>
+          <CardServices title={(
+            <>
+              Preparação para <br /> importação/exportação
+            </>
+          )} icon_src={faHandshake}/>
+          {/* <CardServices />
+          <CardServices />
+          <CardServices /> */}  
         </div>
       </div>
       

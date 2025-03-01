@@ -72,6 +72,11 @@
     gap: 2em;
     bottom: 2em;
 }
+.header-learnMore{
+    animation: desappear 1.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: exit 1;
+}
 .header-learnMore h1{
     color: white;
     animation: bounce 1.5s ease-in-out infinite;
@@ -125,6 +130,9 @@
 }
 .section-noLimitless-textContainer h1{
     font-size: 48px;
+    animation: appear 1.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 .section-noLimitless-textContainer p{
     font-size: 18px;
@@ -133,3 +141,5 @@
 .section-noLimitless-textContainer a{
     margin-top: 3em;
 }
+
+
