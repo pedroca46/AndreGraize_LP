@@ -47,14 +47,31 @@ function App() {
         </div>
 
         <div className='section-ourServices'>
-          <CardServices title={(
-            <>
-              Preparação para <br /> importação/exportação
-            </>
-          )} icon_src={faHandshake}/>
-          {/* <CardServices />
-          <CardServices />
-          <CardServices /> */}  
+          <div className='section-ourServices-grid'>
+            <CardServices title={(
+              <>
+                Preparação para <br /> importação/exportação
+              </>
+            )} icon_src={faHandshake}/>
+
+            <CardServices title={(
+              <>
+                Preparação para <br /> importação/exportação
+              </>
+            )} icon_src={faHandshake}/>
+
+            <CardServices title={(
+              <>
+                Preparação para <br /> importação/exportação
+              </>
+            )} icon_src={faHandshake}/>
+
+            <CardServices title={(
+              <>
+                Preparação para <br /> importação/exportação
+              </>
+            )} icon_src={faHandshake}/>
+          </div>
         </div>
       </div>
       
