@@ -18,7 +18,8 @@
     height: 290px;
     background-image: url(../../images/topography.png);
 }
-.cardServices-gradient{
+.cardServices-container::after{
+    content: '';
     width: 100%;
     height: 100%;
     border-radius: 1em;
