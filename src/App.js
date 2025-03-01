@@ -1,16 +1,22 @@
 import './global.css'
 import './App.css';
+
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { motion } from 'framer-motion';
+
+import CardServices from './components/cardServices/CardServices';
 import Navbar from './components/navbar/Navbar';
+
 import Example from './images/example.png'
+import ag1 from './images/ag.jpg'
+
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { faShip } from '@fortawesome/free-solid-svg-icons/faShip';
-
 import { faHandshake } from '@fortawesome/free-solid-svg-icons';
 
 // images
-import ag1 from './images/ag.jpg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import CardServices from './components/cardServices/CardServices';
+
 
 function App() {
   return (
@@ -26,11 +32,11 @@ function App() {
             de suprimentos global.</p>
             <a href="#" className='header-contactButton'>Contate-nos</a>
           </div>
-          <div className='header-learnMore'>
+          <motion.div className='header-learnMore'>
             <FontAwesomeIcon icon={faArrowDown}  style={{color: "#ffffff",}} className='iconArrowDown' />
             <h1 className='header-text'>Quais são nossos serviços?</h1>
             <FontAwesomeIcon icon={faArrowDown}  style={{color: "#ffffff",}} className='iconArrowDown' /> {/* bounce */}
-          </div>
+          </motion.div>
 
         </div>
 
