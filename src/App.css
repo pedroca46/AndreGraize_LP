@@ -100,7 +100,7 @@
     align-items: center;
 }
 .section-noLimitless *{
-    animation: appear 1.5s ease-in-out;
+    animation: appear 3s ease-in-out;
     animation-timeline: view();
     animation-range: entry 0;
 }
@@ -130,9 +130,7 @@
 }
 .section-noLimitless-textContainer h1{
     font-size: 48px;
-    animation: appear 1.5s ease-in-out;
-    animation-timeline: view();
-    animation-range: entry 0;
+
 }
 .section-noLimitless-textContainer p{
     font-size: 18px;
@@ -158,4 +156,9 @@
 
     row-gap: 20%;
     column-gap: 8%;
+}
+.section-ourServices-grid *{
+    animation: appear 1.5s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
