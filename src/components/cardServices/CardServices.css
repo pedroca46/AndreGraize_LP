@@ -20,10 +20,11 @@
 }
 .cardServices-container::after{
     content: '';
-    width: 100%;
-    height: 100%;
-    border-radius: 1em;
     position: absolute;
+    width: 10em;
+    height: 10em;
+    border-radius: 1em;
+    
     background: linear-gradient(0deg, black, rgba(0, 0, 0, 0.929), rgba(46, 46, 46, 0.832));
 }
 
