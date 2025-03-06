@@ -2,8 +2,12 @@ import './global.css'
 import './App.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+<<<<<<< HEAD
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
+=======
+import { motion } from 'framer-motion';
+>>>>>>> parent of e65840c (Add Gsap Framework, animations, etc.)
 
 import CardServices from './components/cardServices/CardServices';
 import Navbar from './components/navbar/Navbar';
@@ -21,6 +25,7 @@ import { faHandshake } from '@fortawesome/free-solid-svg-icons';
 
 
 function App() {
+<<<<<<< HEAD
 
   // ref's
   var noLimitless_p = useRef(null)
@@ -54,6 +59,8 @@ function App() {
 
 
 
+=======
+>>>>>>> parent of e65840c (Add Gsap Framework, animations, etc.)
   return (
     <>
       <div className='App'>
@@ -67,11 +74,11 @@ function App() {
             de suprimentos global.</p>
             <a href="#" className='header-contactButton'>Contate-nos</a>
           </div>
-          <div className='header-learnMore'>
+          <motion.div className='header-learnMore'>
             <FontAwesomeIcon icon={faArrowDown}  style={{color: "#ffffff",}} className='iconArrowDown' />
             <h1 className='header-text'>Quais são nossos serviços?</h1>
             <FontAwesomeIcon icon={faArrowDown}  style={{color: "#ffffff",}} className='iconArrowDown' /> {/* bounce */}
-          </div>
+          </motion.div>
 
         </div>
 
@@ -125,15 +132,15 @@ function App() {
           </div>
         </div>
         
-        <div className='section-noLimitless' ref={noLimitless}>
+        <div className='section-noLimitless'>
             <div className='section-noLimitless-mainContent'>
               <img src={ag1} alt='Foto'></img>
               <div className='section-noLimitless-textContainer'>
-                <h1 ref={noLimitless_h1}>Sem limites</h1>
-                <p ref={noLimitless_p}>Rompa seus limites de compra e venda, acabe com as fronteiras que separam seus negócios de clientes e fornecedores mundiais.
+                <h1>Sem limites</h1>
+                <p>Rompa seus limites de compra e venda, acabe com as fronteiras que separam seus negócios de clientes e fornecedores mundiais.
                 Acompanhamos você e sua empresa nesse processo de evolução,
                 com toda clareza fundamentada na reputação construída ao longo dos anos.</p>
-                <a href="mailto:pedro.alves6491@gmail.com" ref={noLimitless_mailto}>Entre em contato pelo info@andregraize.com.br</a>
+                <a href="mailto:pedro.alves6491@gmail.com">Entre em contato pelo info@andregraize.com.br</a>
               </div>
             </div>
         </div>

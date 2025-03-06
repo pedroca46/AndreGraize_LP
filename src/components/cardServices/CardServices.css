@@ -1,11 +1,6 @@
-:root{
-    --width: 530px;
-    --height: 290px;
-}
-
 .cardServices-container{
-    width: var(--width);
-    height: var(--height);
+    width: 530px;
+    height: 290px;
     margin: 3em;
     background-color: black;
 
@@ -15,20 +10,19 @@
     align-items: center;
     gap: 1em;
     border-radius: 1em;
-    /* transform: scale(0); */
 }
 .cardServices-container::before{
     content: '';
     position: absolute;
-    width: var(--width);
-    height: var(--height);
+    width: 530px;
+    height: 290px;
     background-image: url(../../images/topography.png);
 }
 .cardServices-container::after{
     content: '';
     position: absolute;
-    width: var(--width);
-    height: var(--height);
+    width: 10em;
+    height: 10em;
     border-radius: 1em;
     
     background: linear-gradient(0deg, black, rgba(0, 0, 0, 0.929), rgba(46, 46, 46, 0.832));
