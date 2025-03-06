@@ -2,12 +2,8 @@ import './global.css'
 import './App.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-<<<<<<< HEAD
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
-=======
-import { motion } from 'framer-motion';
->>>>>>> parent of e65840c (Add Gsap Framework, animations, etc.)
 
 import CardServices from './components/cardServices/CardServices';
 import Navbar from './components/navbar/Navbar';
@@ -25,7 +21,6 @@ import { faHandshake } from '@fortawesome/free-solid-svg-icons';
 
 
 function App() {
-<<<<<<< HEAD
 
   // ref's
   var noLimitless_p = useRef(null)
@@ -39,28 +34,10 @@ function App() {
   Anim_noLimitless(noLimitless, noLimitless_h1, noLimitless_p, noLimitless_mailto)
 
 
-
-  var split = ourServices_p.current
-  split = split.innerText 
+  var split = ourServices_p.current?.innerText
   console.log(split)
+
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> parent of e65840c (Add Gsap Framework, animations, etc.)
   return (
     <>
       <div className='App'>
@@ -74,11 +51,11 @@ function App() {
             de suprimentos global.</p>
             <a href="#" className='header-contactButton'>Contate-nos</a>
           </div>
-          <motion.div className='header-learnMore'>
+          <div className='header-learnMore'>
             <FontAwesomeIcon icon={faArrowDown}  style={{color: "#ffffff",}} className='iconArrowDown' />
             <h1 className='header-text'>Quais são nossos serviços?</h1>
             <FontAwesomeIcon icon={faArrowDown}  style={{color: "#ffffff",}} className='iconArrowDown' /> {/* bounce */}
-          </motion.div>
+          </div>
 
         </div>
 
