@@ -3,8 +3,12 @@ import './App.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
+=======
+import { motion } from 'framer-motion';
+>>>>>>> parent of e65840c (Add Gsap Framework, animations, etc.)
 =======
 import { motion } from 'framer-motion';
 >>>>>>> parent of e65840c (Add Gsap Framework, animations, etc.)
@@ -26,6 +30,7 @@ import { faHandshake } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   // ref's
   var noLimitless_p = useRef(null)
@@ -43,6 +48,8 @@ function App() {
   console.log(split)
 
   
+=======
+>>>>>>> parent of e65840c (Add Gsap Framework, animations, etc.)
 =======
 >>>>>>> parent of e65840c (Add Gsap Framework, animations, etc.)
   return (
