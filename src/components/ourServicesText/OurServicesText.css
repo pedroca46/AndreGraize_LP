@@ -1,0 +1,11 @@
+.ourServicesText-Main{
+    width: 80vw;
+    height: 1em;
+    margin: 4em 0 10em 0;
+}
+
+.ourServicesText-AnimatedText{
+    color: var(--secondary-color);
+    font-size: 3.4em;
+    font-weight: 500;
+}

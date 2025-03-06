@@ -17,18 +17,17 @@ import ag1 from './images/ag.jpg'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { faShip } from '@fortawesome/free-solid-svg-icons/faShip';
 import { faHandshake } from '@fortawesome/free-solid-svg-icons';
-
-// images
+import OurServicesText from './components/ourServicesText/OurServicesText';
 
 
 function App() {
-
   const noLimitless_p = useRef(null)
   const noLimitless_h1 = useRef(null)
   const noLimitless_mailto = useRef(null)
   const noLimitless = useRef(null)
 
   Anim_noLimitless(noLimitless, noLimitless_h1, noLimitless_p, noLimitless_mailto)
+  const ourServices_p_ref = useRef(null)
 
   return (
     <>
@@ -52,7 +51,7 @@ function App() {
         </div>
 
         <div className='section-ourServices'>
-
+          <OurServicesText />
           <h1>Nossos serviços</h1>
           <div className='section-ourServices-hr'>
             <hr></hr><FontAwesomeIcon icon={faShip} className='section-ourServices-hr-icon'/><hr></hr>
