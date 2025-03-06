@@ -1,14 +1,13 @@
 import './global.css'
 import './App.css';
 
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
 
 import CardServices from './components/cardServices/CardServices';
 import Navbar from './components/navbar/Navbar';
+import Anim_noLimitless from './utils/animations/NoLimitless';
 
 import Example from './images/example.png'
 import ag1 from './images/ag.jpg'
@@ -17,44 +16,38 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { faShip } from '@fortawesome/free-solid-svg-icons/faShip';
 import { faHandshake } from '@fortawesome/free-solid-svg-icons';
 
+
 // images
 
 
 function App() {
 
-  const noLimitless_p = useRef(null)
-  const noLimitless_h1 = useRef(null)
-  const noLimitless_mailto = useRef(null)
-  const noLimitless = useRef(null)
+  // ref's
+  var noLimitless_p = useRef(null)
+  var noLimitless_h1 = useRef(null)
+  var noLimitless_mailto = useRef(null)
+  var noLimitless = useRef(null)
 
-  gsap.registerPlugin(ScrollTrigger)
+  var ourServices_p = useRef(null)
 
-  useEffect(()=>{
-    var elements = gsap.utils.toArray([noLimitless_h1.current, noLimitless_p.current, noLimitless_mailto.current]);
-    let animDel = 0
+  // animations
+  Anim_noLimitless(noLimitless, noLimitless_h1, noLimitless_p, noLimitless_mailto)
 
-    elements.forEach(el => {
-      console.log(el)
-      animDel += .1
-      gsap.fromTo(el, {opacity: 0, y: 100}, {opacity: 1, y: 0, duration: .7, delay: animDel,scrollTrigger: {
-        trigger: noLimitless.current,
-        start: "top 80%"
-      }})
-    }) 
-  })
 
-  // var split = new SplitText((noLimitless_h1, noLimitless_p) =>{
-  //   gsap.from((noLimitless_h1, noLimitless_p), {
-  //     duration: 0.8,
-  //     opacity: 0,
-  //     scale: 0,
-  //     y: 80,
-  //     rotationX: 180,
-  //     transformOrigin: "0% 50% -50",
-  //     ease: "back",
-  //     stagger: 0.01
-  //   });
-  // });
+
+  var split = ourServices_p.current
+  split = split.innerText 
+  console.log(split)
+  
+
+
+
+
+
+
+
+
+
 
 
 
@@ -83,6 +76,9 @@ function App() {
         </div>
 
         <div className='section-ourServices'>
+          <p className='section-ourServices-p' ref={ourServices_p}>
+            O que move essa engrenagem global são as pessoas, os melhores profissionais ligados em uma rede global, unidas pelo mesmo propósito, trabalhando em cooperação visando os melhores resultados.
+          </p>
 
           <h1>Nossos serviços</h1>
           <div className='section-ourServices-hr'>
@@ -91,6 +87,18 @@ function App() {
 
 
           <div className='section-ourServices-grid'>
+            <CardServices title={(
+              <>
+                Preparação para <br /> importação/exportação
+              </>
+            )} icon_src={faHandshake}/>
+
+            <CardServices title={(
+              <>
+                Preparação para <br /> importação/exportação
+              </>
+            )} icon_src={faHandshake}/>
+
             <CardServices title={(
               <>
                 Preparação para <br /> importação/exportação
