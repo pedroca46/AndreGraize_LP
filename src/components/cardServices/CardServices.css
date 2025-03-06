@@ -1,11 +1,11 @@
-<<<<<<< HEAD
+:root{
+    --width: 530px;
+    --height: 290px;
+}
 
-
-=======
->>>>>>> parent of e65840c (Add Gsap Framework, animations, etc.)
 .cardServices-container{
-    width: 530px;
-    height: 290px;
+    width: var(--width);
+    height: var(--height);
     margin: 3em;
     background-color: black;
 
@@ -15,19 +15,20 @@
     align-items: center;
     gap: 1em;
     border-radius: 1em;
+    /* transform: scale(0); */
 }
 .cardServices-container::before{
     content: '';
     position: absolute;
-    width: 530px;
-    height: 290px;
+    width: var(--width);
+    height: var(--height);
     background-image: url(../../images/topography.png);
 }
 .cardServices-container::after{
     content: '';
     position: absolute;
-    width: 10em;
-    height: 10em;
+    width: var(--width);
+    height: var(--height);
     border-radius: 1em;
     
     background: linear-gradient(0deg, black, rgba(0, 0, 0, 0.929), rgba(46, 46, 46, 0.832));
