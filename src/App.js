@@ -9,6 +9,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 
 import CardServices from './components/cardServices/CardServices';
 import Navbar from './components/navbar/Navbar';
+import Anim_noLimitless from './utils/animations/NoLimitless';
 
 import Example from './images/example.png'
 import ag1 from './images/ag.jpg'
@@ -27,7 +28,7 @@ function App() {
   const noLimitless_mailto = useRef(null)
   const noLimitless = useRef(null)
 
- 
+  Anim_noLimitless(noLimitless, noLimitless_h1, noLimitless_p, noLimitless_mailto)
 
   return (
     <>
@@ -59,6 +60,18 @@ function App() {
 
 
           <div className='section-ourServices-grid'>
+            <CardServices title={(
+              <>
+                Preparação para <br /> importação/exportação
+              </>
+            )} icon_src={faHandshake}/>
+
+            <CardServices title={(
+              <>
+                Preparação para <br /> importação/exportação
+              </>
+            )} icon_src={faHandshake}/>
+
             <CardServices title={(
               <>
                 Preparação para <br /> importação/exportação
