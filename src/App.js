@@ -18,6 +18,7 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { faShip } from '@fortawesome/free-solid-svg-icons/faShip';
 import { faHandshake } from '@fortawesome/free-solid-svg-icons';
 import OurServicesText from './components/ourServicesText/OurServicesText';
+import Footer from './components/footer/Footer';
 
 
 function App() {
@@ -109,8 +110,16 @@ function App() {
               </div>
             </div>
         </div>
+
+        
       </div>
       
+
+
+
+
+
+      <Footer />
     </>
   );
 }
