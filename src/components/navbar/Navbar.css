@@ -22,13 +22,24 @@
   
   .nav-list{
     display: flex;
-    width: 50%;
+    width: 40%;
     justify-content: space-around;
+    align-items: center;
   }
 
   .nav-item{
     list-style: none;
     transition: .6s ease-in-out;
+  }
+
+  .nav-button{
+    background: var(--secondary-color);
+    padding: 1rem 3.5rem;
+    border-radius: .8rem;
+    text-decoration: none;
+  }
+  .nav-list a{
+    text-decoration: none;
   }
 
   

@@ -4,7 +4,7 @@ import '../../global.css'
 function Footer(){
     return (
         <>
-            <div className="Footer">
+            <div className="Footer" id='footer'>
                 <div className='container'>
                     <div className='navbar'>
                         <div>

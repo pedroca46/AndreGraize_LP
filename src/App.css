@@ -1,10 +1,7 @@
 .App{
     width: 100%;
-    overflow-x: hidden;
 }
-#root{
-    overflow-x: hidden;
-}
+
 
 .Header{
     height: 100vh;

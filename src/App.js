@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <div className='App'>
-        <div className='Header'>
+        <div className='Header' id='home'>
           <Navbar />
           <div className='header-textContainer'>
             <h1>Overseas trading & Business <br/>
@@ -41,7 +41,7 @@ function App() {
             <p>Há mais de 2 décadas nos mercados brasileiros e chineses. <br/>
             Conte com nossos serviços de ponta-a-ponta na cadeia <br/>
             de suprimentos global.</p>
-            <a href="#" className='header-contactButton'>Contate-nos</a>
+            <a href="https://wa.me/5533998704029" target='_blank' className='header-contactButton'>Contate-nos</a>
           </div>
           <div className='header-learnMore'>
             <FontAwesomeIcon icon={faArrowDown}  style={{color: "#ffffff",}} className='iconArrowDown' />
@@ -51,7 +51,7 @@ function App() {
 
         </div>
 
-        <div className='section-ourServices'>
+        <div className='section-ourServices' id='services'>
           <OurServicesText />
           <h1>Nossos serviços</h1>
           <div className='section-ourServices-hr'>
